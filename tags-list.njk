@@ -1,10 +1,15 @@
 ---
 permalink: /tags/
 layout: layouts/home.njk
+eleventyNavigation:
+  key: Tags
+  order: 4
 ---
-<h1>Tags</h1>
+<div class="container mx-auto py-5">
+  <h1 class="text-xl font-bold mb-4">
+    Tags
+  </h1>
 
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-{% endfor %}
+  {% set tagslist = collections.tagList %}
+  {% include "tagslist.njk" %}
+</div>

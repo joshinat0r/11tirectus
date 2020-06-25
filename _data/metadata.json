@@ -1,9 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "url": "https://joshuahahn.de/",
+  "title": "11tirectus",
+  "description": "DIY JAMStack, 11ty blog backed by Directus.",
+  "socials": {
+    "facebook": "asdf",
+    "twitter": "asdf",
+    "instagram": "asdf",
+    "linkedin": "asdf"
+  },
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Random tech-stuff.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://myurl.com/"

@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-hero
+---
+<div class="h-128 p-1 bg-no-repeat bg-cover bg-center" style="background-image: url('{{ heroImage }}')">
+  <div class="container mx-auto">
+    <h1 class="flex-1 text-4xl text-white font-bold my-4">
+      {{ title }}
+    </h1>
+  </div>
+</div>
+<section class="container bg-white rounded mx-auto shadow-lg p-4 markdown-body">
+  {{ content | safe }}
+</section>
+
+<div class="mt-20">
+  {% set postheading = 'Most recent posts' %}
+  {% set postslist = collections.posts | head(-3) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postslist.njk" %}
+</div>

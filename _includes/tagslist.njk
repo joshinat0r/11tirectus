@@ -1,0 +1,8 @@
+{% for tag in tagslist %}
+  {%- if collections.tagList.indexOf(tag) != -1 -%}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl | url }}" class="mr-2 p-2 text-white bg-primary-500 flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
+      {{ tag }}
+    </a>
+  {%- endif -%}
+{% endfor %}
